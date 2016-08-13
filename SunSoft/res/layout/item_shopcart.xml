@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/main_size_one" 
+        android:background="@color/color_my_garden_background"
+        />
+
+    <TextView
+        android:id="@+id/buy_account_goods_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/main_size_twenty"
+        android:paddingLeft="@dimen/main_size_ten"
+        android:paddingTop="@dimen/main_size_twenty"
+        android:text="赣县四中校服 2015 年秋装男女制服款"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/main_size_one"
+       android:background="@color/color_my_garden_background"
+         />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buy_account_address"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/shopcart_check"
+                android:layout_width="@dimen/main_size_twenty"
+                android:layout_height="@dimen/main_size_twenty"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/checkbox_shop"
+                android:button="@null" />
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/buy_account_goods_pic"
+                android:layout_width="@dimen/main_size_ninty_five"
+                android:layout_height="@dimen/main_size_ninty_five"
+                android:layout_margin="@dimen/main_size_ten"
+                android:src="@drawable/yifu" >
+            </com.android.volley.toolbox.NetworkImageView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="@dimen/main_size_ten"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/main_text_thirteen" />
+
+          
+                <TextView
+                    android:id="@+id/buy_account_chima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@id/buy_account_goods_color_zhi"
+                    android:text="尺码："
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/main_text_thirteen" />
+
+                <TextView
+                    android:id="@+id/buy_account_goods_chima_zhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@id/buy_account_chima"
+                    android:text="175/88A"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/main_text_thirteen" />
+
+                <TextView
+                    android:id="@+id/buy_account_goods_price_red"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/buy_account_chima"
+                    android:layout_marginRight="@dimen/main_size_ten"
+                    android:layout_marginTop="@dimen/main_size_ten"
+                    android:text="¥39.00"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/main_text_thirteen" />
+
+                <TextView
+                    android:id="@+id/buy_account_goods_price_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/buy_account_goods_price_red"
+                    android:layout_below="@id/buy_account_chima"
+                    android:layout_marginRight="@dimen/main_size_twenty"
+                    android:layout_toRightOf="@id/buy_account_goods_price_red"
+                    android:text="¥39.00"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/main_text_thirteen" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/main_size_thirty_five"
+                    android:layout_below="@id/buy_account_goods_price_black"
+                    android:layout_marginTop="@dimen/main_size_ten"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/shopcart_sub"
+                        android:layout_width="@dimen/main_size_twenty_five"
+                        android:layout_height="@dimen/main_size_twenty_five"
+                        android:background="@drawable/shape_square_w"
+                        android:text="-" />
+
+                    <TextView
+                        android:id="@+id/shopcart_edit_count"
+                        android:layout_width="@dimen/main_size_thirty"
+                        android:layout_height="@dimen/main_size_twenty_five"
+                        android:background="@drawable/shape_square_w"
+                        android:gravity="center"
+                        android:hint="1"
+                        android:inputType="number"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/shopcart_add"
+                        android:layout_width="@dimen/main_size_twenty_five"
+                        android:layout_height="@dimen/main_size_twenty_five"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/shape_square_w"
+                        android:text="+" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_my_garden_background" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp" 
+                android:background="@color/color_my_garden_background"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/bottom_toobar"
+    android:layout_height="57dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ConsultationActivity" >
+
+    <RadioGroup
+        android:id="@+id/bottom_rg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#989898"
+        android:orientation="horizontal" >
+  <!-- 首页 -->
+
+        <RadioButton
+            android:id="@+id/consultation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_shouye_btn_education"
+            android:gravity="center|bottom"
+            android:paddingBottom="3dp"
+            android:paddingTop="10dp"
+           
+            android:text="通知管理"
+            android:textColor="@drawable/color_radiobutton"
+            android:visibility="visible"
+            android:textSize="@dimen/main_text_twelve" />
+
+        <!-- 首页结束 -->
+        <TextView 
+            android:layout_width="@dimen/main_size_one"
+            android:layout_height="fill_parent"
+            android:background="#d0d0d0"
+           android:layout_marginTop="@dimen/main_size_ten"
+            android:layout_marginBottom="@dimen/main_size_ten"
+            />
+        <!-- 学校商城 -->
+
+        <!-- 购物车开始 -->
+ <RadioButton
+            android:id="@+id/shoping"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_school_manager_btn"
+            android:gravity="center|bottom"
+            android:paddingBottom="3dp"
+            android:paddingTop="10dp"
+            android:text="学校管理"
+            android:textColor="@drawable/color_radiobutton"
+            android:textSize="@dimen/main_text_twelve" />
+
+        <!-- 购物车结束 -->
+         <TextView 
+            android:layout_width="@dimen/main_size_one"
+            android:layout_height="fill_parent"
+            android:background="#d0d0d0"
+           android:layout_marginTop="@dimen/main_size_ten"
+            android:layout_marginBottom="@dimen/main_size_ten"
+            />
+        <!-- 我的智园开始 -->
+
+        <RadioButton
+            android:id="@+id/mygarden"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_my_garden_btn"
+            android:gravity="center|bottom"
+            android:paddingBottom="3dp"
+            android:paddingTop="10dp"
+            android:text="我的智园"
+            android:textColor="@drawable/color_radiobutton"
+            android:textSize="@dimen/main_text_twelve" />
+        <!-- 我的智园结束 -->
+ 
+    </RadioGroup>
+
+</LinearLayout>

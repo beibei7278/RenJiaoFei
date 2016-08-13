@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#f8f8f8"
+    >
+    
+    
+      <RelativeLayout 
+      android:id="@+id/prot"
+      android:layout_height="48dp"
+      android:layout_width="fill_parent"
+      android:background="#f0f0f0"
+      >
+      
+      <ImageView 
+          android:padding="6dp"
+          android:layout_height="48dp"
+          android:layout_width="48dp"
+          android:src="@drawable/return_icon"
+          android:id="@+id/contact_back"
+          android:scaleType="centerCrop"
+          />
+      
+      <TextView 
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:text="联系我们"
+          android:textColor="#3d3d4f"
+          android:textSize="18sp"
+          android:layout_centerInParent="true"
+          />
+      
+  </RelativeLayout>
+   <TextView 
+          android:layout_centerInParent="true"
+          android:layout_height="wrap_content"
+          android:layout_width="fill_parent"
+          android:src="@drawable/downloadpic"
+           android:layout_margin="30dp"
+          android:layout_marginTop="100dp"
+          android:text="@string/cus"
+          android:textSize="16sp"
+          android:textColor="@color/gray"
+          android:lineSpacingMultiplier="1.5"
+          />
+
+
+</RelativeLayout>

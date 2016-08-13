@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+     >
+    
+    
+    <RelativeLayout 
+      android:id="@+id/hft"
+      android:layout_height="48dp"
+      android:layout_width="fill_parent"
+      android:background="#f0f0f0"
+      >
+      
+      <ImageView 
+          android:padding="6dp"
+          android:layout_height="48dp"
+          android:layout_width="48dp"
+          android:src="@drawable/return_icon"
+          android:id="@+id/hfcz_backl"
+          android:scaleType="centerCrop"
+          />
+      
+      <TextView 
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:text="流量充值"
+          android:textColor="#3d3d4f"
+          android:textSize="18sp"
+          android:layout_centerInParent="true"
+          />
+            
+  </RelativeLayout>  
+  
+    <ScrollView 
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_below="@+id/hft"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        >
+        
+        <LinearLayout 
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            >
+            
+            <TextView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="手机号"
+                android:textColor="@color/gray"
+                />
+ 
+              <RelativeLayout 
+                  android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+     
+        >        
+
+         <EditText 
+        android:paddingLeft="5dp"
+        android:hint="输入手机号"
+        android:layout_height="30dp"
+        android:layout_width="fill_parent"
+        android:background="@drawable/edittext_press_bg"
+        android:id="@+id/phonenum_editl"
+        android:singleLine="true"
+        android:inputType="number"
+        android:maxLength="11"
+        />   
+        <LinearLayout 
+            android:layout_height="fill_parent"
+            android:layout_width="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:orientation="vertical"
+             android:layout_marginRight="10dp"
+            >
+              <TextView 
+                   android:layout_weight="1"
+        android:id="@+id/p_pnamel"      
+        android:layout_height="fill_parent"
+        android:layout_width="wrap_content"
+        android:text=""       
+        android:layout_alignParentBottom="true"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:textColor="@color/green"
+        />    
+            
+               <TextView 
+                   android:textColor="@color/green"
+        android:layout_weight="1"
+        android:id="@+id/p_plxl"      
+        android:layout_height="fill_parent"
+        android:layout_width="wrap_content"
+        android:text=""       
+        android:textSize="10sp"
+        android:gravity="center"
+        />
+            
+            
+        </LinearLayout>
+       
+         
+    </RelativeLayout>
+            
+            
+            <com.yfd.appTest.CustomView.GrapeGridview
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:id="@+id/phonenumlistl"
+                >
+                
+            </com.yfd.appTest.CustomView.GrapeGridview>
+             <TextView 
+                 android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="选择流量包"
+                android:textColor="@color/gray"
+                />
+             
+              <com.yfd.appTest.CustomView.GrapeGridview
+                  android:numColumns="3"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:id="@+id/pricelistl"
+                android:horizontalSpacing="10dp"
+                android:verticalSpacing="10dp"
+                android:listSelector="@null"
+                android:minHeight="150dp"
+                >
+                
+            </com.yfd.appTest.CustomView.GrapeGridview>
+            
+           <TextView 
+               android:id="@+id/zhepricel"
+               android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="折后价"
+                android:textColor="@color/gray"
+                />   
+        <TextView
+            android:layout_marginTop="5dp"
+        android:paddingLeft="5dp"
+        android:gravity="center"
+        android:layout_height="30dp"
+        android:layout_width="150dp"
+        android:background="@drawable/input_gray_bg"
+        android:id="@+id/phonenum_zhepricel"
+        android:singleLine="true"
+        />  
+            
+              
+              <LinearLayout android:layout_marginTop="10dp"
+                  android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+                  android:orientation="horizontal"
+                  >
+                 <TextView 
+               
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="实际充值金额"
+                android:textColor="@color/gray"
+                />    
+                    <TextView 
+                        android:id="@+id/sjpricel"
+               android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:text="0.00"
+                android:textColor="#F23030"
+                /> 
+                  
+              </LinearLayout>
+              
+              <Button 
+                  android:id="@+id/tijiaoczl"
+                  android:layout_gravity="center"
+                  android:layout_margin="20dp"
+                  android:layout_height="40dp"
+                  android:layout_width="200dp"
+                  android:text="提交"
+                  android:textColor="@color/white"
+                  android:background="@drawable/value_button"
+                  android:enabled="false"
+                  />
+              
+        </LinearLayout>
+        
+    </ScrollView>
+
+</RelativeLayout>

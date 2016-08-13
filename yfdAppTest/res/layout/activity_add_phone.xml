@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="top" >
+
+    <RelativeLayout
+        android:id="@+id/regesttop"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#f0f0f0" >
+
+        <TextView
+            android:id="@+id/tv_regist_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="手机号补全页面"
+            android:textColor="#3d3d4f"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/regesttop" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/user_phone"
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="手机号"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/input_user_phone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_toRightOf="@+id/user_phone"
+                    android:background="@color/transparent"
+                    android:hint="输入您的手机号"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/img_phone_clean"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/loginclean"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/light_gray" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/regestbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/login_butn_bg"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

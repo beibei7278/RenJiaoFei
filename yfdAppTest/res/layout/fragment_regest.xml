@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <EditText 
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="45dp"
+        android:layout_width="fill_parent"
+        android:background="@drawable/login_input_bg"
+        android:hint="输入手机号"
+        />
+    
+    <RelativeLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+ 
+        android:layout_marginTop="30dp"
+        >
+           <EditText 
+               android:paddingLeft="10dp"
+        android:layout_height="45dp"
+        android:layout_width="fill_parent"
+        android:background="@drawable/login_input_bg"
+        android:hint="输入验证码"
+        />
+           
+           <TextView 
+               android:layout_marginRight="15dp"
+               android:layout_height="34dp"
+               android:layout_width="120dp"
+               android:text="获取验证码"
+               android:gravity="center"
+               android:textColor="@color/white"
+               android:background="#90ffffff"
+               android:layout_centerVertical="true"
+               android:layout_alignParentRight="true"
+               />
+        
+    </RelativeLayout>
+ 
+    
+    <TextView 
+ 
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="忘记密码?"
+        android:textColor="@color/light_blue"
+        android:layout_gravity="right"
+        />
+    
+    
+    <Button 
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="45dp"
+        android:text="提交"
+        android:layout_width="fill_parent"
+        android:textColor="@color/white"
+        android:background="@drawable/login_butn_bg"
+        android:textSize="20sp"
+        android:id="@+id/loginbtn"
+        />
+</LinearLayout>

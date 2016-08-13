@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#f8f8f8"
+    >
+    
+    
+      <RelativeLayout 
+      android:id="@+id/prot"
+      android:layout_height="48dp"
+      android:layout_width="fill_parent"
+      android:background="#f0f0f0"
+      >
+      
+      <ImageView 
+          android:padding="6dp"
+          android:layout_height="48dp"
+          android:layout_width="48dp"
+          android:src="@drawable/return_icon"
+          android:id="@+id/down_back"
+          android:scaleType="centerCrop"
+          />
+      
+      <TextView 
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:text="邀请好友"
+          android:textColor="#3d3d4f"
+          android:textSize="18sp"
+          android:layout_centerInParent="true"
+          />
+      
+  </RelativeLayout>
+
+   <ImageView 
+          android:layout_below="@+id/prot"
+          android:layout_height="200dp"
+          android:layout_width="fill_parent"
+          android:src="@drawable/ewm"
+          android:layout_centerHorizontal="true"
+          android:id="@+id/downpic"
+          />
+  <TextView 
+      android:layout_marginTop="20dp"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      android:layout_below="@+id/downpic"
+      android:layout_centerHorizontal="true"
+      android:text="扫描上方二维码下载"
+      android:id="@+id/downtxt"
+      />
+  
+  <TextView 
+      android:layout_below="@+id/downtxt"
+      android:drawableLeft="@drawable/weixinshare"
+      android:layout_marginTop="20dp"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:text="分享到朋友圈"
+      android:id="@+id/sharewx"
+      android:drawablePadding="5dp"
+      android:gravity="center"
+      />
+   <TextView 
+      android:layout_below="@+id/sharewx"
+      android:drawableLeft="@drawable/weixinshare"
+      android:layout_marginTop="20dp"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:text="分享微信好友"
+      android:id="@+id/sharefrend"
+      android:drawablePadding="5dp"
+      android:gravity="center"
+      />
+<TextView 
+    android:layout_below="@+id/sharefrend"
+      android:drawableLeft="@drawable/qqshare"
+      android:layout_marginTop="20dp"
+      android:layout_height="wrap_content"
+      android:layout_width="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:text="分享到QQ空间"
+      android:id="@+id/shareqq"
+      android:drawablePadding="5dp"
+      android:gravity="center"
+      />
+</RelativeLayout>

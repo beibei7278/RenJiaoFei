@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/buy_account_company"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/main_size_ten"
+        android:paddingTop="@dimen/main_size_twenty"
+        android:paddingBottom="@dimen/main_size_twenty"
+        android:text="森仕公司发货"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_gray" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buy_account_address"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/main_size_ninty_five"
+                android:layout_height="@dimen/main_size_ninty_five"
+                android:layout_margin="@dimen/main_size_ten"
+                android:background="@drawable/yifu" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="@dimen/main_size_ten"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/buy_account_goods_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="赣县四中校服 2015 秋装男女制服款"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/main_text_thirteen" />
+
+                <TextView
+                    android:id="@+id/buy_account_goods_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/buy_account_goods_title"
+                    android:layout_marginTop="13dp"
+                    android:text="颜色："
+                    android:textColor="@color/color_gray"
+                    android:textSize="@dimen/main_text_thirteen" />
+
+                <TextView
+                    android:id="@+id/buy_account_goods_color_zhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/buy_account_goods_title"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@id/buy_account_goods_color"
+                    android:text="白色"
+                    android:textColor="@color/color_gray"
+                    android:textSize="@dimen/main_text_thirteen" />
+
+                <TextView
+                    android:id="@+id/buy_account_chima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/buy_account_goods_title"
+                    android:layout_marginLeft="@dimen/main_size_twenty"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@id/buy_account_goods_color_zhi"
+                    android:text="尺码："
+                    android:textColor="@color/color_gray"
+                    android:textSize="@dimen/main_text_thirteen" />
+
+                <TextView
+                    android:id="@+id/buy_account_goods_chima_zhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/buy_account_goods_title"
+                    android:layout_marginTop="13dp"
+                    android:layout_toRightOf="@id/buy_account_chima"
+                    android:text="175/88A"
+                    android:textColor="@color/color_gray"
+                    android:textSize="@dimen/main_text_thirteen" />
+
+                <TextView
+                    android:id="@+id/buy_account_goods_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/buy_account_goods_color"
+                    android:layout_marginRight="@dimen/main_size_ten"
+                    android:layout_marginTop="@dimen/main_size_twenty"
+                    android:text="¥39.00"
+                    android:textColor="@color/red" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

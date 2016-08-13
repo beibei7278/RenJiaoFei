@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/main_size_one"
+        android:layout_marginTop="@dimen/main_size_ten"
+        android:background="@color/color_xian_kuang" />
+
+    <TextView
+        android:id="@+id/buy_account_company"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/main_size_twenty"
+        android:paddingLeft="@dimen/main_size_ten"
+        android:paddingTop="@dimen/main_size_twenty"
+        android:text="森仕公司发货"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/main_size_one"
+        android:background="@color/color_xian_kuang" />
+
+    <com.sunsoft.zyebiz.b2e.swipemenulistview.SwipeMenuListView
+        android:id="@+id/order_all_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp"
+        android:divider="#00000000"
+        android:dividerHeight="0dip" >
+    </com.sunsoft.zyebiz.b2e.swipemenulistview.SwipeMenuListView>
+
+</LinearLayout>

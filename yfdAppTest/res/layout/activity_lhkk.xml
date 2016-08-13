@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#f8f8f8"
+    >
+    
+    
+      <RelativeLayout 
+      android:id="@+id/pkt"
+      android:layout_height="48dp"
+      android:layout_width="fill_parent"
+      android:background="#f0f0f0"
+      >
+      
+      <ImageView 
+          android:padding="6dp"
+          android:layout_height="48dp"
+          android:layout_width="48dp"
+          android:src="@drawable/return_icon"
+          android:id="@+id/phkk_back"
+          android:scaleType="centerCrop"
+          />
+      
+      <TextView 
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:text="靓号开卡"
+          android:textColor="#3d3d4f"
+          android:textSize="18sp"
+          android:layout_centerInParent="true"
+          />
+      
+        <TextView 
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:text="重置"
+          android:textColor="@color/light_blue"
+          android:textSize="18sp"
+          android:layout_centerInParent="true"
+          android:visibility="gone"
+          />
+      
+  </RelativeLayout>  
+  
+      <ScrollView 
+          android:layout_height="fill_parent"
+          android:layout_width="fill_parent"
+          android:layout_below="@+id/pkt"
+          >
+          <LinearLayout 
+              android:layout_height="fill_parent"
+              android:layout_width="fill_parent"
+              android:orientation="vertical"
+              >
+              
+              <TextView 
+                  android:layout_marginTop="20dp"
+                  android:layout_marginLeft="20dp"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:text="手机号码"
+                  android:textColor="@color/txtcolor"
+                  />
+              <EditText 
+                  android:hint="输入有效手机号"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginRight="20dp"
+                  android:layout_height="40dp"
+                  android:layout_width="fill_parent"
+                  android:background="@drawable/edittext_press_bg"
+                  />
+                    <TextView 
+                          android:layout_marginTop="20dp"
+                  android:layout_marginLeft="20dp"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:text="sim卡号"
+                  android:textColor="@color/txtcolor"
+                  />
+              <EditText 
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginRight="20dp"
+                  android:layout_height="40dp"
+                  android:layout_width="fill_parent"
+                  android:background="@drawable/edittext_press_bg"
+                  />
+              
+                  <TextView 
+                        android:layout_marginTop="20dp"
+                  android:layout_marginLeft="20dp"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:text="运营商类型"
+                  android:textColor="@color/txtcolor"
+                  />
+              <Button 
+                  android:text="--"
+                  android:paddingLeft="3dp"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginRight="20dp"
+                  android:layout_height="40dp"
+                  android:layout_width="150dp"
+                  android:background="@drawable/edittext_press_bg"
+                  android:gravity="left|center_vertical"
+                  android:drawableRight="@drawable/triangle_up"
+                  android:drawablePadding="5dp"
+                  />
+              
+              
+              <TextView 
+                        android:layout_marginTop="20dp"
+                  android:layout_marginLeft="20dp"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:text="录入开卡人身份信息"
+                  android:textColor="@color/txtcolor"
+                  />
+             <RelativeLayout 
+                 android:layout_marginTop="10dp"
+                 android:layout_height="wrap_content"
+                 android:layout_width="fill_parent"
+                 >
+                 
+                 <ImageView 
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:layout_centerInParent="true"
+                     android:src="@drawable/b"
+                     android:layout_margin="20dp"
+                     />
+                 
+             </RelativeLayout>
+             
+               <TextView 
+                          android:layout_marginTop="20dp"
+                  android:layout_marginLeft="20dp"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:text="姓名"
+                  android:textColor="@color/txtcolor"
+                  />
+               
+               
+                  <RelativeLayout 
+                      android:layout_marginLeft="20dp"
+                  android:layout_marginRight="20dp"
+                 android:layout_marginTop="10dp"
+                 android:layout_height="wrap_content"
+                 android:layout_width="fill_parent"
+                 >
+                 
+                  <EditText 
+                      android:hint="输入姓名（与身份证一致）"
+                  
+                  android:layout_height="40dp"
+                  android:layout_width="fill_parent"
+                  android:background="@drawable/edittext_press_bg"
+                  />
+                  
+                  <ImageView 
+                      android:padding="10dp"
+                      android:layout_alignParentRight="true"
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:layout_centerInParent="true"
+                     android:src="@drawable/saomiao_icon"
+                     android:visibility="gone"
+                     
+                     />
+                 
+             </RelativeLayout>
+             
+                  
+                    <TextView 
+                          android:layout_marginTop="20dp"
+                  android:layout_marginLeft="20dp"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:text="身份证号"
+                  android:textColor="@color/txtcolor"
+                  />
+               
+               
+                  <RelativeLayout 
+                      android:layout_marginLeft="20dp"
+                  android:layout_marginRight="20dp"
+                 android:layout_marginTop="10dp"
+                 android:layout_height="wrap_content"
+                 android:layout_width="fill_parent"
+                 >
+                 
+                  <EditText 
+                      android:hint="输入身份证号（与身份证一致）"
+                  
+                  android:layout_height="40dp"
+                  android:layout_width="fill_parent"
+                  android:background="@drawable/edittext_press_bg"
+                  />
+                  
+                  <ImageView 
+                      android:padding="10dp"
+                      android:layout_alignParentRight="true"
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:layout_centerInParent="true"
+                     android:src="@drawable/saomiao_icon"
+                     android:visibility="gone"
+                     
+                     />
+                 
+             </RelativeLayout>
+             
+                  
+                  
+                            <TextView 
+                          android:layout_marginTop="20dp"
+                  android:layout_marginLeft="20dp"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:text="证件地址"
+                  android:textColor="@color/txtcolor"
+                  />
+               
+               
+                  <RelativeLayout 
+                      android:layout_marginLeft="20dp"
+                  android:layout_marginRight="20dp"
+                 android:layout_marginTop="10dp"
+                 android:layout_height="wrap_content"
+                 android:layout_width="fill_parent"
+                 >
+                 
+                  <EditText 
+                      android:hint="输入证件地址（与身份证一致）"
+                  
+                  android:layout_height="40dp"
+                  android:layout_width="fill_parent"
+                  android:background="@drawable/edittext_press_bg"
+                  />
+                  
+                  <ImageView 
+                      android:padding="10dp"
+                      android:layout_alignParentRight="true"
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content"
+                     android:layout_centerInParent="true"
+                     android:src="@drawable/saomiao_icon"
+                     android:visibility="gone"
+                     
+                     />
+                 
+             </RelativeLayout>
+             
+                     <TextView 
+                        android:layout_marginTop="20dp"
+                  android:layout_marginLeft="20dp"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:text="录添加开卡人身份证照片"
+                  android:textColor="@color/txtcolor"
+                  />
+             <RelativeLayout 
+                 android:layout_marginTop="10dp"
+                 android:layout_height="wrap_content"
+                 android:layout_width="fill_parent"
+                 android:layout_marginLeft="50dp"
+                 android:layout_marginRight="50dp"
+                 >
+                 
+                 <ImageView 
+                     android:layout_alignParentLeft="true"
+                     android:layout_height="80px"
+                     android:layout_width="80px"
+                     android:layout_centerVertical="true"
+                     android:src="@drawable/zheng"
+                     android:layout_margin="20dp"
+                     />
+                   <ImageView 
+                     android:layout_alignParentRight="true"
+                     android:layout_height="80px"
+                     android:layout_width="80px"
+                     android:layout_centerVertical="true"
+                     android:src="@drawable/fan"
+                     android:layout_margin="20dp"
+                     />
+                 
+             </RelativeLayout>
+             
+             <Button 
+                 android:textColor="@color/white"
+                 android:layout_marginTop="30dp"
+                 android:layout_height="50dp"
+                 android:layout_width="200dp"
+                 android:text="保存"
+                 android:textSize="20sp"
+                 android:layout_gravity="center"
+                 android:background="@color/orange"
+                 android:gravity="center"
+                 android:layout_marginBottom="100dp"
+                 />
+              
+          </LinearLayout>
+          
+      </ScrollView>
+
+</RelativeLayout>

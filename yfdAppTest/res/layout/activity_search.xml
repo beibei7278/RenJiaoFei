@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+     >
+    
+    
+     <RelativeLayout 
+      android:id="@+id/skt"
+      android:layout_height="48dp"
+      android:layout_width="fill_parent"
+      android:background="#f0f0f0"
+      >
+      
+      <ImageView 
+          android:padding="6dp"
+          android:layout_height="48dp"
+          android:layout_width="48dp"
+          android:src="@drawable/return_icon"
+          android:id="@+id/search_back"
+          android:scaleType="centerCrop"
+          />     
+      
+  
+          <RadioGroup 
+          android:id="@+id/search_top_tab"
+          android:layout_height="35dp"
+          android:layout_width="fill_parent"
+          android:layout_centerInParent="true"
+          android:orientation="horizontal"
+          android:checkedButton="@+id/skh_kk"  
+          android:layout_marginLeft="60dp"
+          android:layout_marginRight="60dp"        
+          >
+          
+          <RadioButton 
+              android:button="@null"
+              android:id="@+id/skh_kk"
+              android:layout_height="fill_parent"
+              android:layout_width="fill_parent"
+              android:layout_weight="1"
+              android:text="开卡"
+              android:textColor="@drawable/radiobutton_text_checked"
+              android:background="@drawable/tab_leftbtn_bg"
+              android:textSize="12sp"
+              android:gravity="center"
+              />
+             <RadioButton 
+              android:button="@null"
+              android:id="@+id/skh_bkgb"
+              android:layout_height="fill_parent"
+              android:layout_width="fill_parent"
+              android:layout_weight="1"
+              android:text="补卡过户"
+              android:textColor="@drawable/radiobutton_text_checked"
+              android:background="@drawable/tab_centerbtn_bg"
+              android:gravity="center"
+               android:textSize="12sp"
+              />
+           <RadioButton 
+              android:button="@null"
+              android:id="@+id/skh_ll"
+              android:layout_height="fill_parent"
+              android:layout_width="fill_parent"
+              android:layout_weight="1"
+              android:text="流量"
+              android:textColor="@drawable/radiobutton_text_checked"
+              android:background="@drawable/tab_centerbtn_bg"
+              android:gravity="center"
+               android:textSize="12sp"
+              />
+          <RadioButton 
+              android:button="@null"
+              android:id="@+id/skh_hf"
+              android:layout_height="fill_parent"
+              android:layout_width="fill_parent"
+              android:layout_weight="1"
+              android:text="话费"
+              android:textColor="@drawable/radiobutton_text_checked"
+              android:background="@drawable/tab_rightbtn_bg"
+              android:gravity="center"
+               android:textSize="12sp"
+              />
+          
+          
+      </RadioGroup>
+      
+      
+  </RelativeLayout>  
+  
+        <FrameLayout 
+         android:paddingTop="10dp"
+         android:layout_height="wrap_content"
+         android:layout_width="fill_parent"
+         android:orientation="vertical"
+         android:layout_below="@+id/skt"
+         android:id="@+id/kksfragment"
+         />
+    
+
+</RelativeLayout>

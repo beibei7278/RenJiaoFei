@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/bottom_toobar"
+    android:layout_height="57dp"
+ android:background="@color/color_my_garden_background"
+    android:orientation="vertical"
+    tools:context=".ConsultationActivity" >
+
+    <RadioGroup
+        android:id="@+id/bottom_rg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" 
+       
+        android:layout_gravity="center_vertical"
+        >
+  <!-- 首页 -->
+
+        <RadioButton
+            android:id="@+id/consultation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_shouye_btn"
+            android:gravity="center|bottom"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="统购商城"
+            android:textColor="@drawable/color_radiobutton"
+            android:visibility="visible"
+            android:textSize="@dimen/main_text_twelve" />
+
+        <!-- 首页结束 -->
+       
+        <!-- 学校商城 -->
+
+        <RadioButton
+            android:id="@+id/groupstore"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_school_store_btn"
+            android:gravity="center|bottom"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="学校商城"
+            android:textColor="@drawable/color_radiobutton"
+            android:textSize="@dimen/main_text_twelve" />
+
+        <!-- 学校商城结束 -->
+       <!--  <TextView 
+            android:layout_width="@dimen/main_size_one"
+            android:layout_height="fill_parent"
+            android:background="#d0d0d0"
+           android:layout_marginTop="@dimen/main_size_ten"
+            android:layout_marginBottom="@dimen/main_size_ten"
+            /> -->
+        <!-- 购物车开始 -->
+ <RadioButton
+            android:id="@+id/shoping"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_shopping_cart_btn"
+            android:gravity="center|bottom"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="购物车"
+            android:textColor="@drawable/color_radiobutton"
+            android:textSize="@dimen/main_text_twelve" />
+
+        <!-- 购物车结束 -->
+        <!--  <TextView 
+            android:layout_width="@dimen/main_size_one"
+            android:layout_height="fill_parent"
+            android:background="#d0d0d0"
+           android:layout_marginTop="@dimen/main_size_ten"
+            android:layout_marginBottom="@dimen/main_size_ten"
+            /> -->
+        <!-- 我的智园开始 -->
+
+        <RadioButton
+            android:id="@+id/mygarden"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:button="@null"
+            android:drawableTop="@drawable/tab_my_garden_btn"
+            android:gravity="center|bottom"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="我的智园"
+            android:textColor="@drawable/color_radiobutton"
+            android:textSize="@dimen/main_text_twelve" />
+        <!-- 我的智园结束 -->
+ 
+    </RadioGroup>
+
+</LinearLayout>

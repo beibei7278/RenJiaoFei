@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/lan_bg"
+    
+     >
+    
+    <LinearLayout 
+        android:layout_weight="1"
+        android:layout_centerHorizontal="true"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+       
+        android:id="@+id/login_top"
+        >
+        
+        <TextView 
+             android:layout_marginTop="50dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="任 缴 费"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            />
+        
+        <ImageView 
+            android:layout_marginTop="20dp"
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:src="@drawable/logor"
+            android:layout_gravity="center"
+            />
+        
+        <TextView 
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="亚飞达移动充值平台"
+            android:layout_marginTop="50px"
+            android:textSize="50px"
+            android:textColor="@color/white"
+            android:background="@color/lightorange"
+            
+            />
+        
+    </LinearLayout>
+    
+    
+     <RadioGroup
+         android:visibility="gone"
+         android:layout_marginTop="50px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="320px"
+        android:id="@+id/login_tab_group"
+        android:layout_width="fill_parent"
+        android:layout_height="80px"
+
+        android:background="@color/transparent"
+        android:orientation="horizontal" 
+        >
+        
+        <RadioButton
+            android:button="@null"
+            android:layout_gravity="bottom"
+            android:id="@+id/btn_login"          
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:checked="true"
+            android:drawableBottom="@drawable/bg_jzdj_checkbox_textbticon_menu"
+            android:gravity="center"
+            android:text="开卡"
+            android:textColor="@drawable/bg_jzdj_checkbox_text_menu"
+            android:textSize="24sp" 
+            />
+
+        <RadioButton
+            android:button="@null"
+            android:layout_gravity="bottom"
+            android:id="@+id/btn_regest" 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:drawableBottom="@drawable/bg_jzdj_checkbox_textbticon_menu"
+            android:drawablePadding="12px"
+            android:gravity="center"
+            android:text="充值"
+            android:textColor="@drawable/bg_jzdj_checkbox_text_menu"
+            android:textSize="24sp"
+            android:visibility="visible" 
+            />
+        
+        </RadioGroup>
+    
+    <FrameLayout 
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+    android:id="@+id/loginfragmentcon"
+  
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:paddingBottom="20dp"
+    ></FrameLayout>
+    
+    <TextView 
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:text="暂时不支持注册,如需申请账户,请联系 0531-61328555-6"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:textColor="@color/light_gray"
+        />
+</LinearLayout>

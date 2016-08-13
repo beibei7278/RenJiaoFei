@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_my_garden_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:background="@color/color_dark_blue"
+        >
+
+       
+    <TextView
+        android:id="@+id/tv_title_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <ImageView
+        android:id="@+id/img_title_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/shouye1"
+        android:clickable="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/title_main"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/main_text_eighteen"
+        android:textColor="@color/white" >
+    </TextView>
+     <ImageView
+        android:id="@+id/img_title_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:clickable="true"
+        android:visibility="visible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/main_size_ten"
+            android:gravity="center"
+            android:text="恭喜你"
+            android:textColor="@color/color_yellow_ju"
+            android:textSize="@dimen/main_text_twenty" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="订单支付已完成"
+            android:textColor="@color/black"
+            android:textSize="@dimen/main_text_fifteen" />
+
+       
+         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单号："
+                android:textColor="@color/black"
+                android:textSize="@dimen/main_text_fifteen" />
+
+            <TextView
+                android:id="@+id/order_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11000000000"
+                android:textColor="@color/red"
+                android:textSize="@dimen/main_text_fifteen" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/main_size_one"
+            android:layout_marginTop="@dimen/main_size_ten"
+            android:background="@color/color_xian_kuang" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/go_on_buy"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/main_size_forty"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/main_size_twenty"
+        android:layout_marginRight="@dimen/main_size_twenty"
+        android:layout_marginTop="@dimen/main_size_thirty"
+        android:background="@color/color_yellow_ju"
+        android:gravity="center"
+        android:text="继续购买"
+        android:textColor="@color/white" />
+
+</LinearLayout>

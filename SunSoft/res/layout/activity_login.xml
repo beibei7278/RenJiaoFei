@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_dark_blue" >
+
+        <TextView
+            android:id="@+id/title_main"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_size_forty_five"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/main_text_eighteen" >
+        </TextView>
+    </RelativeLayout>
+
+    <com.sunsoft.zyebiz.b2e.wiget.NLPullRefreshView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/refresh_root"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_my_garden_background"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/login_lunbo_height" >
+
+                    <ImageView
+                        android:id="@+id/login_img_moren_pic"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/login_lunbo_height"
+                        android:background="@drawable/login_carousel"
+                        android:visibility="gone" />
+
+                    <fragment
+                        android:id="@+id/fragment_cycle_viewpager_content"
+                        android:name="com.sunsoft.zyebiz.b2e.cycleviewpager.lib.CycleViewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/login_lunbo_height" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/color_my_garden_background"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/login_shenfen_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_shenfen_parent"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:padding="8dp"
+                        android:text="学生登录"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/login_shenfen_student"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_shenfen_student"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:padding="8dp"
+                        android:text="家长登录"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/main_size_eight"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/lin_login_username"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/main_size_thirty"
+                            android:layout_marginRight="@dimen/main_size_thirty"
+                            android:layout_marginTop="@dimen/main_size_twenty_three"
+                            android:background="@drawable/select_login_user"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/main_size_ten" >
+
+                            <ImageView
+                                android:id="@+id/img_login_pic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/test_login_username" />
+
+                            <TextView
+                                android:id="@+id/tv_login_shu_xian"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_toRightOf="@id/img_login_pic"
+                                android:background="@color/color_gray" />
+
+                            <EditText
+                                android:id="@+id/edt_login_username"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/main_size_thirty"
+                                android:layout_toRightOf="@id/tv_login_shu_xian"
+                                android:background="@null"
+                                android:hint="请输入注册手机号"
+                                android:singleLine="true"
+                                android:textColorHint="@color/color_gray"
+                                android:textSize="@dimen/main_text_fifteen" />
+
+                            <ImageView
+                                android:id="@+id/img_username_clean"
+                                android:layout_width="@dimen/main_size_twenty"
+                                android:layout_height="@dimen/main_size_twenty"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/loginclean"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/lin_login_pas"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/main_size_thirty"
+                            android:layout_marginRight="@dimen/main_size_thirty"
+                            android:layout_marginTop="@dimen/main_size_twenty_three"
+                            android:background="@drawable/select_login_pas"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/main_size_ten" >
+
+                            <ImageView
+                                android:id="@+id/img_login_pic_pas"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/test_login_userpas" />
+
+                            <TextView
+                                android:id="@+id/tv_login_shu_xian_pas"
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_toRightOf="@id/img_login_pic_pas"
+                                android:background="@color/color_gray" />
+
+                            <EditText
+                                android:id="@+id/edt_login_password"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="@dimen/main_size_thirty"
+                                android:layout_toRightOf="@id/tv_login_shu_xian_pas"
+                                android:background="@null"
+                                android:hint="请输入注册密码"
+                                android:inputType="textPassword"
+                                android:longClickable="false"
+                                android:singleLine="true"
+                                android:textColorHint="@color/color_gray"
+                                android:textSize="@dimen/main_text_fifteen" />
+
+                            <ImageView
+                                android:id="@+id/img_password_clean"
+                                android:layout_width="@dimen/main_size_twenty"
+                                android:layout_height="@dimen/main_size_twenty"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/loginclean"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/bt_login"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="@dimen/main_size_thirty"
+                        android:layout_marginRight="@dimen/main_size_thirty"
+                        android:layout_marginTop="@dimen/main_size_twenty_three"
+                        android:background="@drawable/denglumoren"
+                        android:clickable="true"
+                        android:text="@string/bt_hint_login"
+                        android:textColor="@color/color_gray"
+                        android:textSize="@dimen/main_text_fifteen" />
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/main_size_thirty"
+                        android:layout_marginRight="@dimen/main_size_thirty"
+                        android:layout_marginTop="@dimen/main_size_twenty"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/to_regist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerInParent="true"
+                            android:text="@string/tv_do_regist"
+                            android:textColor="@color/color_light_blue"
+                            android:textSize="@dimen/main_text_fifteen"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/forget_pas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerInParent="true"
+                            android:text="@string/tv_do_forget_pas"
+                            android:textColor="@color/color_light_blue"
+                            android:textSize="@dimen/main_text_fifteen" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </com.sunsoft.zyebiz.b2e.wiget.NLPullRefreshView>
+
+    <WebView
+        android:id="@+id/login_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/refresh_root"
+        android:background="@color/color_light_blue" />
+
+</RelativeLayout>

@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#f8f8f8"
+    android:id="@+id/ghroot"
+    >
+    <RelativeLayout 
+        android:layout_height="35dp"
+        android:layout_width="fill_parent"
+        android:background="@color/light_gray"
+        android:id="@+id/s_bkt"
+        android:visibility="gone"
+        >
+        
+         <EditText 
+                 android:id="@+id/search_namebk"
+                 android:layout_marginLeft="5dp"
+                 android:layout_height="fill_parent"
+                 android:layout_width="fill_parent"
+                 android:paddingLeft="5dp"
+                 android:background="@drawable/edittext_press_bg"
+                 android:layout_toLeftOf="@+id/search_bksavebtn"
+                 android:layout_margin="3dp"
+                 />
+        
+        
+         <Button 
+                      android:paddingLeft="20dp"
+                      android:paddingRight="20dp"
+                      android:paddingTop="5dp"
+                      android:paddingBottom="5dp"
+                 android:id="@+id/search_bksavebtn"
+                 android:textColor="@color/white"
+                 android:layout_centerVertical="true"
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:text="查询"
+                 android:textSize="16sp"
+                 android:layout_alignParentRight="true"
+                 android:background="@color/orange"
+                 android:gravity="center"
+                 android:layout_marginRight="5dp"
+                 />
+        
+    </RelativeLayout>
+    
+      
+  
+      <ScrollView 
+          android:layout_below="@+id/s_bkt"
+          android:layout_height="fill_parent"
+          android:layout_width="fill_parent"
+          
+          >
+         <LinearLayout 
+              android:layout_height="fill_parent"
+              android:layout_width="fill_parent"
+              android:orientation="vertical"
+              >
+              
+              <LinearLayout 
+                  android:layout_marginTop="10dp"
+                  android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+                  android:orientation="horizontal"
+                  android:layout_marginLeft="20dp"
+                  >
+                  
+                  <TextView 
+                      android:layout_height="20dp"
+                      android:layout_width="20dp"
+                      android:textColor="@color/white"
+                      android:text="1"
+                      android:textSize="11sp"
+                      android:background="@drawable/cricle_orgineshpe"
+                      android:gravity="center"
+                      android:layout_gravity="left|center_vertical"
+                      />
+                   <TextView 
+                  android:layout_marginLeft="3dp"
+                  android:padding="3dp"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:text="填写卡号基本信息"
+                  android:textColor="@color/light_blue"
+                  android:textStyle="bold"
+                  android:textSize="16sp"
+                   android:gravity="left|center_vertical"
+                  />
+              </LinearLayout>
+                 <LinearLayout 
+                  android:layout_marginTop="5dp"
+                  android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+                  android:orientation="horizontal"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+                  >
+                <LinearLayout 
+                  android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+                  android:orientation="vertical"
+                 android:layout_weight="1"
+                  >
+                  <TextView 
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:text="运营商类型"
+                  android:textColor="@color/txtcolor"
+                  />
+              <Button 
+                  android:id="@+id/bk_choseyys"
+                  android:text="请选择"
+                  android:paddingLeft="3dp"
+                  android:layout_marginTop="5dp"
+                  android:layout_height="35dp"
+                  android:layout_width="fill_parent"
+                  android:background="@drawable/edittext_press_bg"
+                 
+                  android:drawableRight="@drawable/triangle_up"
+                  android:drawablePadding="5dp"
+                  android:gravity="center"
+                  />
+              </LinearLayout>
+              <LinearLayout 
+                  android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+                  android:orientation="vertical"
+                 android:layout_weight="1"
+                 android:layout_marginLeft="5dp"
+                  >
+                  <TextView 
+                  android:id="@+id/gh_datetxt"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:text="入网时间"
+                  android:textColor="@color/txtcolor"
+                  />
+              <Button 
+                  android:id="@+id/bk_chosedate"
+                  android:text="请选择"
+                  android:paddingLeft="3dp"
+                  android:layout_marginTop="5dp"
+                  android:layout_height="35dp"
+                  android:layout_width="fill_parent"
+                  android:background="@drawable/edittext_press_bg"
+                 
+                  android:drawablePadding="5dp"
+                  android:gravity="center"
+                  />
+              </LinearLayout>
+            
+                
+              </LinearLayout>
+              
+              <TextView 
+                  android:layout_marginTop="5dp"
+                  android:layout_marginLeft="20dp"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:text="手机号码"
+                  android:textColor="@color/txtcolor"
+                  android:visibility="gone"
+                  />
+              <EditText 
+                  android:padding="3dp"
+                  android:id="@+id/gh_phone"
+                  android:hint="输入11位有效手机号"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginRight="20dp"
+                  android:layout_height="35dp"
+                  android:layout_width="fill_parent"
+                  android:background="@drawable/edittext_press_bg"
+                  android:textSize="14sp"
+                   android:singleLine="true"
+                   android:inputType="number"
+                  />
+                    <TextView 
+                          android:layout_marginTop="20dp"
+                  android:layout_marginLeft="20dp"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:text="sim卡号"
+                  android:textColor="@color/txtcolor"
+                  android:visibility="gone"
+                 
+                  />
+                    <RelativeLayout 
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                                          android:layout_marginTop="10dp"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginRight="20dp"
+                        >
+                    
+              <EditText 
+                  android:paddingLeft="3dp"
+                  android:hint="服务密码(初始服务密码为手机号码后六位)"
+
+                  android:layout_height="35dp"
+                  android:layout_width="fill_parent"
+                  android:background="@drawable/edittext_press_bg"
+                  android:textSize="14sp"
+                  android:singleLine="true"
+                  android:id="@+id/gh_mm"
+                  android:paddingRight="50dp"
+                  />   
+                  
+          
+                  </RelativeLayout>
+             
+              
+              
+                   <RelativeLayout 
+                      android:layout_marginLeft="20dp"
+                  android:layout_marginRight="20dp"
+                 android:layout_marginTop="10dp"
+                 android:layout_height="wrap_content"
+                 android:layout_width="fill_parent"
+                 >
+                 
+                  <EditText 
+                    
+                      android:hint="呼出通话记录或原因（通话记录要写5个，不重复，中间以空格隔开)"
+                   android:id="@+id/gh_reason"
+                  android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+                  android:background="@drawable/edittext_press_bg"
+                    android:textSize="14sp"
+                  android:lines="3"
+                  android:padding="3dp"
+                  />
+                  
+                
+                 
+             </RelativeLayout>   
+                  
+                   <TextView 
+                  android:layout_marginTop="5dp"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginRight="20dp"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:text="注:过户后迪信通将再次收取该号码当月套餐费"
+                  android:textColor="@color/txtcolor"
+                  android:visibility="visible"
+                  android:textSize="10sp"
+                  />
+               
+               
+             
+                      <LinearLayout 
+                  android:layout_marginTop="10dp"
+                  android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+                  android:orientation="horizontal"
+                  android:layout_marginLeft="20dp"
+                  >
+                  
+                  <TextView 
+                      android:layout_height="20dp"
+                      android:layout_width="20dp"
+                      android:textColor="@color/white"
+                      android:text="2"
+                      android:textSize="11sp"
+                      android:background="@drawable/cricle_orgineshpe"
+                      android:gravity="center"
+                      android:layout_gravity="left|center_vertical"
+                      />
+                   <TextView 
+                  android:layout_marginLeft="3dp"
+                  android:padding="3dp"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:text="添加旧机主身份证正反照片"
+                  android:textColor="@color/light_blue"
+                  android:textStyle="bold"
+                  android:textSize="16sp"
+                   android:gravity="left|center_vertical"
+                  />
+              </LinearLayout>
+             <RelativeLayout 
+                 android:layout_marginTop="5dp"
+                 android:layout_height="wrap_content"
+                 android:layout_width="fill_parent"
+                 android:layout_marginLeft="50dp"
+                 android:layout_marginRight="50dp"
+                 >
+                 
+                 <ImageView 
+                     android:id="@+id/gh_sf_zheng"
+                     android:layout_alignParentLeft="true"
+                    android:layout_height="100px"
+                     android:layout_width="200px"
+                     android:layout_centerVertical="true"
+                     android:src="@drawable/zheng"
+                     android:layout_margin="20dp"
+                     android:scaleType="fitStart"
+                     />
+                   <ImageView 
+                     android:id="@+id/gh_sf_fan"
+                     android:layout_alignParentRight="true"
+                     android:layout_height="100px"
+                     android:layout_width="200px"
+                     android:layout_centerVertical="true"
+                     android:src="@drawable/fan"
+                     android:layout_margin="20dp"
+                      android:scaleType="fitStart"
+                     />
+                 
+             </RelativeLayout>
+             
+                 <LinearLayout 
+                  android:layout_marginTop="10dp"
+                  android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+                  android:orientation="horizontal"
+                  android:layout_marginLeft="20dp"
+                  >
+                  
+                  <TextView 
+                      android:layout_height="20dp"
+                      android:layout_width="20dp"
+                      android:textColor="@color/white"
+                      android:text="3"
+                      android:textSize="11sp"
+                      android:background="@drawable/cricle_orgineshpe"
+                      android:gravity="center"
+                      android:layout_gravity="left|center_vertical"
+                      />
+                   <TextView 
+                  android:layout_marginLeft="3dp"
+                  android:padding="3dp"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:text="添加新机主身份证正反照片"
+                  android:textColor="@color/light_blue"
+                  android:textStyle="bold"
+                  android:textSize="16sp"
+                   android:gravity="left|center_vertical"
+                  />
+              </LinearLayout>
+             <RelativeLayout 
+                 android:layout_marginTop="5dp"
+                 android:layout_height="wrap_content"
+                 android:layout_width="fill_parent"
+                 android:layout_marginLeft="50dp"
+                 android:layout_marginRight="50dp"
+                 >
+                 
+                 <ImageView 
+                     android:id="@+id/gh_sf_xzheng"
+                     android:layout_alignParentLeft="true"
+                    android:layout_height="100px"
+                     android:layout_width="200px"
+                     android:layout_centerVertical="true"
+                     android:src="@drawable/zheng"
+                     android:layout_margin="20dp"
+                     android:scaleType="fitStart"
+                     />
+                   <ImageView 
+                     android:id="@+id/gh_sf_xfan"
+                     android:layout_alignParentRight="true"
+                     android:layout_height="100px"
+                     android:layout_width="200px"
+                     android:layout_centerVertical="true"
+                     android:src="@drawable/fan"
+                     android:layout_margin="20dp"
+                      android:scaleType="fitStart"
+                     />
+                 
+             </RelativeLayout>
+              <LinearLayout 
+                  android:visibility="gone"
+                  android:id="@+id/four"
+                  android:layout_marginTop="10dp"
+                  android:layout_height="wrap_content"
+                  android:layout_width="fill_parent"
+                  android:orientation="horizontal"
+                  android:layout_marginLeft="20dp"
+                  >
+                  
+                  <TextView 
+                      android:layout_height="20dp"
+                      android:layout_width="20dp"
+                      android:textColor="@color/white"
+                      android:text="4"
+                      android:textSize="11sp"
+                      android:background="@drawable/cricle_orgineshpe"
+                      android:gravity="center"
+                      android:layout_gravity="left|center_vertical"
+                      />
+                   <TextView 
+                  android:layout_marginLeft="3dp"
+                  android:padding="3dp"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:text="添加新老机主手持身份证正面照片"
+                  android:textColor="@color/light_blue"
+                  android:textStyle="bold"
+                  android:textSize="16sp"
+                   android:gravity="left|center_vertical"
+                  />
+              </LinearLayout>
+             <RelativeLayout 
+                 android:visibility="gone"
+                 android:layout_marginTop="5dp"
+                 android:layout_height="wrap_content"
+                 android:layout_width="fill_parent"
+                 android:layout_marginLeft="50dp"
+                 android:layout_marginRight="50dp"
+                 android:id="@+id/newandoldpic"
+                 >
+                 
+                 <ImageView 
+                     android:id="@+id/gh_sf_newzheng"
+                     android:layout_alignParentLeft="true"
+                    android:layout_height="100px"
+                     android:layout_width="200px"
+                     android:layout_centerVertical="true"
+                     android:src="@drawable/zheng"
+                     android:layout_margin="20dp"
+                     android:scaleType="fitStart"
+                     />
+                   <ImageView 
+                     android:id="@+id/gh_sf_oldzheng"
+                     android:layout_alignParentRight="true"
+                     android:layout_height="100px"
+                     android:layout_width="200px"
+                     android:layout_centerVertical="true"
+                     android:src="@drawable/zheng"
+                     android:layout_margin="20dp"
+                      android:scaleType="fitStart"
+                     />
+                 
+             </RelativeLayout>
+                 <TextView 
+                  android:layout_marginTop="20dp"
+                  android:layout_marginLeft="20dp"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:text="录添加开卡人手持身份证照片"
+                  android:textColor="@color/txtcolor"
+                  android:visibility="gone"
+                  />
+             <RelativeLayout 
+                 android:visibility="gone"
+                 android:layout_marginTop="10dp"
+                 android:layout_height="wrap_content"
+                 android:layout_width="fill_parent"
+                 android:layout_marginLeft="50dp"
+                 android:layout_marginRight="50dp"
+                 >
+                 
+                 <ImageView 
+                     android:id="@+id/sf_pas"
+                     android:layout_height="200px"
+                     android:layout_width="350px"
+                     android:layout_centerInParent="true"
+                     android:src="@drawable/zheng"
+                     android:layout_margin="20dp"
+                     android:scaleType="fitStart"
+                     />
+      
+                 
+             </RelativeLayout>
+             
+             <Button 
+                 android:id="@+id/bk_save"
+                 android:textColor="@color/white"
+                 android:layout_marginTop="35dp"
+                 android:layout_height="50dp"
+                 android:layout_width="200dp"
+                 android:text="提交"
+                 android:textSize="20sp"
+                 android:layout_gravity="center"
+                 android:background="@color/orange"
+                 android:gravity="center"
+                 android:layout_marginBottom="100dp"
+                 />
+              
+          </LinearLayout>
+          
+      </ScrollView>
+
+</RelativeLayout>

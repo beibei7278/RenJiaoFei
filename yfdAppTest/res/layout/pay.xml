@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/transparent"
+    android:visibility="gone"
+    >
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="微信支付" />
+
+    <Button
+        android:id="@+id/unifiedorder_btn"
+   android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:text="app生成支付订单" />
+
+
+
+    <Button
+            android:id="@+id/appay_pre_btn"
+       android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:text="app支付参数" />
+    <Button
+            android:id="@+id/appay_btn"
+            android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:text="app支付参数" />
+
+
+
+    <TextView
+        android:id="@+id/editText_prepay_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </TextView>
+
+    
+
+</LinearLayout>

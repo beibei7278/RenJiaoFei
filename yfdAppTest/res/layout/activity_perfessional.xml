@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#f8f8f8"
+    >
+    
+  <RelativeLayout 
+      android:id="@+id/pt"
+      android:layout_height="48dp"
+      android:layout_width="fill_parent"
+      android:background="#f0f0f0"
+      >
+      
+      <ImageView 
+          android:padding="6dp"
+          android:layout_height="48dp"
+          android:layout_width="48dp"
+          android:src="@drawable/return_icon"
+          android:id="@+id/set_back"
+          android:scaleType="centerCrop"
+          />
+      
+      <TextView 
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:text="个人中心"
+          android:textColor="#3d3d4f"
+          android:textSize="18sp"
+          android:layout_centerInParent="true"
+          />
+      
+  </RelativeLayout>  
+  <ScrollView 
+      android:layout_height="fill_parent"
+      android:layout_width="fill_parent"
+      android:layout_below="@+id/pt"
+      >
+  <LinearLayout 
+      
+      android:layout_height="fill_parent"
+      android:layout_width="fill_parent"
+      android:orientation="vertical"
+      android:id="@+id/pc"
+      >
+      <RelativeLayout 
+          android:layout_height="240px"
+          android:layout_width="fill_parent"
+          android:background="#3d3d4f"
+          >
+          
+          <ImageView 
+              android:id="@+id/p_user_icon"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:src="@drawable/user_icon"
+              android:layout_centerVertical="true"
+              android:layout_marginLeft="20dp"
+              />
+          
+          <TextView 
+              android:layout_marginLeft="10dp"
+              android:layout_toRightOf="@+id/p_user_icon"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:text="785226262"
+              android:textColor="@color/light_gray"
+              android:layout_centerVertical="true"
+              android:id="@+id/per_name"
+              />
+          
+          <TextView 
+              android:id="@+id/see_my"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:text="查看"
+              android:drawableRight="@drawable/return_icon2"
+              android:drawablePadding="5dp"
+              android:layout_marginRight="20dp"
+              android:textColor="@color/light_blue"
+              />
+          
+          
+      </RelativeLayout>
+      
+      
+      
+       <RelativeLayout 
+           android:id="@+id/p_ylayout"
+          android:layout_height="240px"
+          android:layout_width="fill_parent"
+          android:background="#3d3d4f"
+          >
+          
+          <TextView 
+              
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:text="可用余额"
+              android:layout_above="@+id/p_user_yue"
+              android:layout_marginLeft="20dp"
+              
+              />
+          
+          <TextView 
+              android:layout_centerVertical="true"
+              android:layout_marginLeft="20dp"              
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:text="0.00"
+              android:id="@+id/p_user_yue"
+              android:textColor="@color/white"
+              android:textSize="35sp"
+              />
+          
+          <TextView 
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:text="充值"
+              android:drawableRight="@drawable/return_icon2"
+              android:drawablePadding="5dp"
+              android:layout_marginRight="20dp"
+               android:textColor="@color/light_blue"
+               android:visibility="gone"
+              />
+          
+          
+      </RelativeLayout>
+        <RelativeLayout 
+          android:layout_height="115px"
+          android:layout_width="fill_parent"
+          android:background="@color/white"
+          android:id="@+id/mapsee"
+          android:visibility="gone"
+          >
+          
+          <ImageView 
+              android:id="@+id/p_user_icon"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:src="@drawable/mapicon"
+              android:layout_centerVertical="true"
+              android:layout_marginLeft="20dp"
+              />
+          
+          <TextView 
+              android:layout_marginLeft="10dp"
+              android:layout_toRightOf="@+id/p_user_icon"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:text="地图展示"
+              android:textColor="@color/black"
+              android:layout_centerVertical="true"
+              />
+          
+          <ImageView 
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:src="@drawable/return_icon3"
+              android:layout_marginRight="20dp"
+
+              />
+          <View 
+             android:layout_toRightOf="@+id/p_user_icon"
+              android:layout_height="1dp"
+              android:layout_width="fill_parent"
+              android:background="@color/light_gray"
+              android:layout_alignParentBottom="true"
+              />
+          
+      </RelativeLayout>
+       
+          <RelativeLayout 
+          android:layout_height="115px"
+          android:layout_width="fill_parent"
+          android:background="@color/white"
+          android:id="@+id/toset"
+          >
+          
+          <ImageView 
+              android:id="@+id/p_user_icon"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:src="@drawable/setting_icon"
+              android:layout_centerVertical="true"
+              android:layout_marginLeft="20dp"
+              />
+          
+          <TextView 
+              android:layout_marginLeft="10dp"
+              android:layout_toRightOf="@+id/p_user_icon"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:text="账户设置"
+              android:textColor="@color/black"
+              android:layout_centerVertical="true"
+              />
+          
+          <ImageView 
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:src="@drawable/return_icon3"
+              android:layout_marginRight="20dp"
+
+              />
+          <View 
+             android:layout_toRightOf="@+id/p_user_icon"
+              android:layout_height="1dp"
+              android:layout_width="fill_parent"
+              android:background="@color/light_gray"
+              android:layout_alignParentBottom="true"
+              />
+          
+      </RelativeLayout>
+      
+           <RelativeLayout 
+          android:layout_height="115px"
+          android:layout_width="fill_parent"
+          android:background="@color/white"
+          android:id="@+id/toyjfk"
+          >
+          
+          <ImageView 
+              android:id="@+id/p_user_icon"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:src="@drawable/feedback_icon"
+              android:layout_centerVertical="true"
+              android:layout_marginLeft="20dp"
+              />
+          
+          <TextView 
+              android:layout_marginLeft="10dp"
+              android:layout_toRightOf="@+id/p_user_icon"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:text="意见反馈"
+              android:textColor="@color/black"
+              android:layout_centerVertical="true"
+              />
+          
+          <ImageView 
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:src="@drawable/return_icon3"
+              android:layout_marginRight="20dp"
+
+              />
+          <View 
+             android:layout_toRightOf="@+id/p_user_icon"
+              android:layout_height="1dp"
+              android:layout_width="fill_parent"
+              android:background="@color/light_gray"
+              android:layout_alignParentBottom="true"
+              />
+          
+      </RelativeLayout> 
+      
+           
+             <RelativeLayout 
+          android:layout_height="115px"
+          android:layout_width="fill_parent"
+          android:background="@color/white"
+          android:id="@+id/topro"
+          >
+          
+          <ImageView 
+              android:id="@+id/p_user_icon"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:src="@drawable/question_icon"
+              android:layout_centerVertical="true"
+              android:layout_marginLeft="20dp"
+              />
+          
+          <TextView 
+              android:layout_marginLeft="10dp"
+              android:layout_toRightOf="@+id/p_user_icon"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:text="常见问题"
+              android:textColor="@color/black"
+              android:layout_centerVertical="true"
+              />
+          
+          <ImageView 
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:src="@drawable/return_icon3"
+              android:layout_marginRight="20dp"
+
+              />
+      <View 
+               android:layout_toRightOf="@+id/p_user_icon"
+              android:layout_height="1dp"
+              android:layout_width="fill_parent"
+              android:background="@color/light_gray"
+              android:layout_alignParentBottom="true"
+              />
+      </RelativeLayout>
+      
+                          <RelativeLayout 
+          android:layout_height="115px"
+          android:layout_width="fill_parent"
+          android:background="@color/white"
+          android:id="@+id/tocheckupdate"
+          >
+          
+          <ImageView 
+              android:id="@+id/p_user_icon"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:src="@drawable/question_icon"
+              android:layout_centerVertical="true"
+              android:layout_marginLeft="20dp"
+              />
+          
+          <TextView 
+              android:layout_marginLeft="10dp"
+              android:layout_toRightOf="@+id/p_user_icon"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:text="检查更新"
+              android:textColor="@color/black"
+              android:layout_centerVertical="true"
+              />
+          
+          
+          <TextView 
+             android:id="@+id/version"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:text=""
+              android:textSize="12sp"
+              android:layout_centerInParent="true"
+              />
+          
+          <ImageView 
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:src="@drawable/return_icon3"
+              android:layout_marginRight="20dp"
+
+              />
+      
+      </RelativeLayout>
+             
+                           <RelativeLayout 
+android:layout_marginTop="100dp"
+      android:layout_height="wrap_content"
+      android:layout_width="fill_parent"
+      >
+      
+      <TextView 
+          android:layout_centerInParent="true"
+          android:layout_height="50dp"
+          android:layout_width="260dp"
+          android:id="@+id/set_exit"
+          android:text="退出"
+          android:textColor="@color/red"
+          android:background="@drawable/exit_icon"
+          android:textSize="18sp"
+          android:gravity="center"
+          />
+      
+  </RelativeLayout>
+             
+  </LinearLayout>
+  
+ 
+  </ScrollView>
+    
+
+</RelativeLayout>

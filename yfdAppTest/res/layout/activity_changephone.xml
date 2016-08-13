@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white"
+    >
+    
+    
+      <RelativeLayout 
+      android:id="@+id/yjt"
+      android:layout_height="48dp"
+      android:layout_width="fill_parent"
+      android:background="#f0f0f0"
+      >
+      
+      <ImageView 
+          android:padding="6dp"
+          android:layout_height="48dp"
+          android:layout_width="48dp"
+          android:src="@drawable/return_icon"
+          android:id="@+id/cpe_back"
+          android:scaleType="centerCrop"
+          />
+ 
+      <TextView 
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:text="修改联系方式"
+          android:textColor="#3d3d4f"
+          android:textSize="18sp"
+          android:layout_centerInParent="true"
+          />
+      
+  
+      
+  </RelativeLayout>  
+  
+      <ScrollView 
+          android:layout_height="fill_parent"
+          android:layout_width="fill_parent"
+          android:layout_below="@+id/yjt"
+          >
+          <LinearLayout 
+              android:layout_height="fill_parent"
+              android:layout_width="fill_parent"
+              android:orientation="vertical"
+              >
+              
+              
+              <TextView 
+                  android:padding="20dp"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:text="手机号"
+                  android:textColor="@color/txtcolor"
+                  />
+                   <EditText 
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+          android:layout_height="40dp"
+          android:layout_width="fill_parent"
+          android:background="@drawable/edittext_press_bg"
+          android:id="@+id/cphone1"
+          android:paddingLeft="5dp"
+          />
+                   
+                     <TextView 
+                  android:padding="20dp"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:text="姓名"
+                  android:textColor="@color/txtcolor"
+                  />
+                   <EditText 
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+          android:layout_height="40dp"
+          android:layout_width="fill_parent"
+          android:background="@drawable/edittext_press_bg"
+          android:id="@+id/cpname1"
+           android:paddingLeft="5dp"
+          />
+                   
+                <TextView 
+                  android:padding="20dp"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  android:text="QQ号码"
+                  android:textColor="@color/txtcolor"
+                  />
+            <EditText 
+          android:layout_marginLeft="20dp"
+                       android:layout_marginRight="20dp"
+          android:layout_marginTop="5dp"
+          android:layout_height="40dp"
+          android:layout_width="fill_parent"
+          android:background="@drawable/edittext_press_bg"
+          android:id="@+id/cphqq2"
+           android:paddingLeft="5dp"
+          />  
+          
+            <Button 
+                 android:textColor="@color/white"
+                 android:layout_marginTop="30dp"
+                 android:layout_height="50dp"
+                 android:layout_width="200dp"
+                 android:text="提交"
+                 android:textSize="20sp"
+                 android:layout_gravity="center"
+                 android:background="@drawable/submission_icon"
+                 android:gravity="center"
+                 android:layout_marginBottom="100dp"
+                 android:id="@+id/changephonebtn"
+                 />
+            
+          </LinearLayout>
+          
+      </ScrollView>
+
+</RelativeLayout>
